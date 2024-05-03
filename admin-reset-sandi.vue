@@ -1,0 +1,359 @@
+<template>
+  <div :class="$style.resetKataSandi">
+    <div :class="$style.wrapper">
+      <div :class="$style.body">
+        <div :class="$style.illustration">
+          <div :class="$style.frame">
+            <img :class="$style.shapeIcon" alt="" src="/shape2.svg" />
+            <img :class="$style.shapeIcon1" alt="" src="/shape3@2x.png" />
+          </div>
+        </div>
+        <div :class="$style.card">
+          <div :class="$style.logo">
+            <div :class="$style.warehouse1StreamlineCoresParent">
+              <img
+                :class="$style.warehouse1StreamlineCoresIcon"
+                alt=""
+                src="/warehouse1streamlinecoresvg.svg"
+              />
+              <div :class="$style.sistemInformasiParent">
+                <b :class="$style.sistemInformasi">Sistem Informasi </b>
+                <b :class="$style.sistemInformasi"
+                  >Peminjaman Alat dan Gudang</b
+                >
+              </div>
+            </div>
+          </div>
+          <div :class="$style.text">
+            <div :class="$style.marketingAutomationParent">
+              <div :class="$style.marketingAutomation">
+                <span :class="$style.resetKataSandi1">Reset Kata sandi</span>
+                <span :class="$style.span"> </span>
+                <span :class="$style.span1">🔒</span>
+              </div>
+              <div :class="$style.lookAgainAt">
+                Kata sandi baru Anda harus berbeda dari kata sandi yang
+                digunakan sebelumnya
+              </div>
+            </div>
+            <div :class="$style.textfieldoutlined">
+              <div :class="$style.input">
+                <div :class="$style.labelContainer">
+                  <div :class="$style.label">Passwoard</div>
+                </div>
+                <div :class="$style.active">
+                  <div :class="$style.value">Kata sandi baru</div>
+                  <div :class="$style.adornmentEnd">
+                    <img
+                      :class="$style.warehouse1StreamlineCoresIcon"
+                      alt=""
+                      src="/removeredeye.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div :class="$style.textfieldoutlined">
+              <div :class="$style.input">
+                <div :class="$style.labelContainer">
+                  <div :class="$style.label">Passwoard</div>
+                </div>
+                <div :class="$style.active">
+                  <div :class="$style.value">Konfirmasi katas sandi</div>
+                  <div :class="$style.adornmentEnd">
+                    <img
+                      :class="$style.warehouse1StreamlineCoresIcon"
+                      alt=""
+                      src="/removeredeye.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div :class="$style.button">
+              <div :class="$style.unstyledbutton">
+                <div :class="$style.button1">masuk</div>
+              </div>
+            </div>
+            <div :class="$style.link">
+              <img
+                :class="$style.arrowbackiosIcon"
+                alt=""
+                src="/arrowbackios.svg"
+              />
+              <div :class="$style.lookAgainAt1">Kembali ke Masuk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script lang="ts">
+  import { defineComponent } from "vue";
+
+  export default defineComponent({
+    name: "ResetKataSandi",
+  });
+</script>
+<style module>
+  .shapeIcon {
+    position: absolute;
+    top: 0px;
+    left: 118px;
+    width: 1322px;
+    height: 291px;
+  }
+  .shapeIcon1 {
+    position: absolute;
+    top: 110px;
+    left: 210px;
+    width: 146px;
+    height: 140px;
+    object-fit: cover;
+  }
+  .frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 291px;
+  }
+  .illustration {
+    position: absolute;
+    top: 662px;
+    left: 0px;
+    width: 1440px;
+    height: 291px;
+  }
+  .warehouse1StreamlineCoresIcon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .sistemInformasi {
+    position: relative;
+    line-height: 15px;
+  }
+  .sistemInformasiParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .warehouse1StreamlineCoresParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+  }
+  .logo {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .resetKataSandi1 {
+    font-weight: 600;
+  }
+  .span {
+    font-weight: 500;
+  }
+  .span1 {
+    font-family: var(--font-roboto);
+  }
+  .marketingAutomation {
+    width: 392px;
+    position: relative;
+    letter-spacing: 0.18px;
+    line-height: 32px;
+    display: inline-block;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .lookAgainAt {
+    width: 392px;
+    position: relative;
+    font-size: var(--light-typography-body-2-size);
+    letter-spacing: 0.15px;
+    line-height: 21px;
+    color: var(--light-text-secondary);
+    display: inline-block;
+  }
+  .marketingAutomationParent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px var(--padding-5xl);
+    font-size: var(--font-size-5xl);
+    color: var(--light-text-primary);
+  }
+  .label {
+    position: relative;
+    letter-spacing: 0.15px;
+    line-height: 12px;
+  }
+  .labelContainer {
+    background-color: var(--light-primary-contrast);
+    height: 2px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px var(--padding-9xs);
+    box-sizing: border-box;
+  }
+  .value {
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+  }
+  .adornmentEnd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .active {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-mini) 0px var(--padding-mini) var(--padding-8xs);
+    gap: var(--gap-5xs);
+    font-size: var(--light-components-input-text-size);
+    color: var(--light-text-disabled);
+  }
+  .input {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--light-other-outlined-border);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px var(--padding-xs);
+  }
+  .textfieldoutlined {
+    align-self: stretch;
+    border-radius: var(--br-5xs);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px var(--padding-base);
+  }
+  .button1 {
+    position: relative;
+    letter-spacing: 0.46px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .unstyledbutton {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-5xs) var(--padding-7xl);
+  }
+  .button {
+    align-self: stretch;
+    box-shadow: var(--light-elevation-3);
+    border-radius: var(--br-5xs);
+    background-color: var(--light-primary-main);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--light-components-button-large-size);
+    color: var(--light-primary-contrast);
+  }
+  .arrowbackiosIcon {
+    width: 20px;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .lookAgainAt1 {
+    position: relative;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+  }
+  .link {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) 0px 0px;
+    gap: var(--gap-7xs);
+    text-align: center;
+    font-size: var(--light-components-input-text-size);
+    color: var(--light-primary-main);
+  }
+  .text {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--light-components-input-label-size);
+    color: var(--light-text-secondary);
+  }
+  .card {
+    position: absolute;
+    top: 271px;
+    left: 496px;
+    box-shadow: var(--light-elevation-card);
+    border-radius: var(--br-3xs);
+    background-color: var(--light-primary-contrast);
+    width: 448px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-39xl) var(--padding-9xl) var(--padding-17xl);
+    box-sizing: border-box;
+  }
+  .body {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+  }
+  .wrapper {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .resetKataSandi {
+    width: 100%;
+    position: relative;
+    background-color: var(--light-background-body-background);
+    height: 1024px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    font-size: var(--font-size-2xs);
+    color: var(--light-text-primary);
+    font-family: var(--light-typography-body-2);
+  }
+</style>
